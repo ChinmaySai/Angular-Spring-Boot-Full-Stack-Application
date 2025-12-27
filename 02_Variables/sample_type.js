@@ -1,4 +1,6 @@
+"use strict";
 ///Variables Example
+Object.defineProperty(exports, "__esModule", { value: true });
 var found = true;
 var grade = 88.6;
 var firstName = "John";
