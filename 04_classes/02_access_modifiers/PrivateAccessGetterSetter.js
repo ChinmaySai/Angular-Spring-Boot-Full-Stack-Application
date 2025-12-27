@@ -1,0 +1,29 @@
+var Customer = /** @class */ (function () {
+    function Customer() {
+    }
+    Object.defineProperty(Customer.prototype, "firstName", {
+        get: function () {
+            return this._firstName;
+        },
+        set: function (value) {
+            this._firstName = value;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Customer.prototype, "lastName", {
+        get: function () {
+            return this._lastName;
+        },
+        set: function (value) {
+            this._lastName = value;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return Customer;
+}());
+var customer = new Customer();
+customer.firstName = "Private Access";
+customer.lastName = "Modifiers";
+console.log("Program Name: \n" + customer.firstName + " " + customer.lastName + " " + "Program");
